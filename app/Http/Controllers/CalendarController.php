@@ -6,14 +6,19 @@ use Illuminate\Http\Request;
 
 class CalendarController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
+    protected $redirectTo = '/home';
+
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+
     public function index()
     {
-        //
+        return "works";
     }
 
     /**

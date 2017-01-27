@@ -11,7 +11,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="css/app.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -23,11 +23,13 @@
 <body>
     <div id="app">
         @include('layouts.nav')
-
+<div class="container">
         @yield('content')
+</div>
     </div>
 
     <!-- Scripts -->
-    <script src="js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

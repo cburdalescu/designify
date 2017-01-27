@@ -1,25 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Dashboard</div>
 
-                <div class="panel-body">
-                    You are logged in! {{Auth::user()->name}} with role {{Auth::user()->role}}
-                </div>
-                <div>
-                    @if(Auth::user()->role == 1)
-                        Admin
-                    @else
-                        user
-                        @endif
-
+                <div class="jumbotron">
+                    <h1>Navbar example</h1>
+                    <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+                    <p>
+                        <a class="btn btn-lg btn-primary" href="#" role="button">button</a>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-</div>
 @endsection
